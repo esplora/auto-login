@@ -6,7 +6,7 @@ Empower your users with convenient access to your application by securely loggin
 
 ## Installation
 
-You can install Memento in your project using the Composer package manager:
+You can install AutoLogin in your project using the Composer package manager:
 
 ```bash
 composer require esplora/auto-login
