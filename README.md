@@ -69,11 +69,26 @@ In your custom template, you can access the `link` variable, which contains the 
 ```html
 <!-- path.for.your.blade.template -->
 
-<script>
-  setTimeout(function(){
-    window.location.href = "{{ $link }}";
-  }, 3000);
-</script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Redirecting...</title>
+
+        <script type="text/javascript">
+            setTimeout(function () {
+                window.location.href = "{{ $link }}";
+            }, 3000);
+        </script>
+    </head>
+    <body>
+        <h1>You are being redirected</h1>
+
+        <p>You will be redirected to an external page in a few seconds.</p>
+
+        <p>If you are not redirected automatically, please click <a href="{{ $link }}">here</a>.</p>
+    </body>
+</html>
 ```
 
 
