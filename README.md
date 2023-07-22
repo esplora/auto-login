@@ -3,6 +3,15 @@
 The AutoLogin package for Laravel enables seamless autologin functionality via temporary links.
 Empower your users with convenient access to your application by securely logging them in using time-limited, temporary autologin links.
 
+
+## Installation
+
+You can install Memento in your project using the Composer package manager:
+
+```bash
+composer require esplora/auto-login
+```
+
 ## Usage
 
 To get started with the AutoLogin package, follow the steps below:
