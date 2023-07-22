@@ -1,7 +1,7 @@
 {
   "name": "esplora/auto-login",
-  "description": "...",
-  "keywords": [],
+  "description": "Enables seamless autologin functionality via temporary links, providing convenient and secure access to your application.",
+  "keywords": ["laravel", "autoauth", "autologin"],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -29,13 +29,6 @@
   "autoload-dev": {
     "psr-4": {
       "Esplora\\AutoLogin\\Tests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Esplora\\AutoLogin\\ServerSentEventsServiceProvider"
-      ]
     }
   },
   "config": {
