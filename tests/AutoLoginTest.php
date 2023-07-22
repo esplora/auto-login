@@ -13,7 +13,7 @@ class AutoLoginTest extends TestCase
     /**
      * Define routes setup.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param \Illuminate\Routing\Router $router
      *
      * @return void
      */
@@ -36,7 +36,6 @@ class AutoLoginTest extends TestCase
         $this->get($link)
             ->assertRedirect('/other-link');
     }
-
 
     /**
      * @return void

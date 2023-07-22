@@ -14,7 +14,8 @@ class AutoLoginViewTest extends TestCase
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param \Illuminate\Foundation\Application $app
+     *
      * @return void
      */
     protected function defineEnvironment($app)
@@ -24,11 +25,10 @@ class AutoLoginViewTest extends TestCase
         });
     }
 
-
     /**
      * Define routes setup.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param \Illuminate\Routing\Router $router
      *
      * @return void
      */
