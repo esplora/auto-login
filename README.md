@@ -88,7 +88,7 @@ In your custom template, you can access the `link` variable, which contains the 
 
     <p>
       If you are not redirected automatically, please click
-      <a href="{{$link}}">here</a>.
+      <a href="{{ $link }}">here</a>.
     </p>
   </body>
 </html>
