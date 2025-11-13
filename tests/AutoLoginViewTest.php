@@ -42,9 +42,9 @@ class AutoLoginViewTest extends TestCase
     /**
      * @return void
      */
-    public function testViewRedirect(): void
+    public function test_view_redirect(): void
     {
-        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User());
+        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User);
 
         $link = AutoLogin::to('/view-link', 1);
 

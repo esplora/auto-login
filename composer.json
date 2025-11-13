@@ -16,7 +16,7 @@
     "laravel/framework": "^10.0|^11.0|^12.0"
   },
   "require-dev": {
-    "laravel/pint": "^1.2",
+    "laravel/pint": "^1.17",
     "orchestra/testbench-core": "^8.0",
     "orchestra/testbench-dusk": "^8.0",
     "phpunit/phpunit": "^10.0"

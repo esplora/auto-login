@@ -27,9 +27,9 @@ class AutoLoginTest extends TestCase
     /**
      * @return void
      */
-    public function testHttpRedirect(): void
+    public function test_http_redirect(): void
     {
-        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User());
+        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User);
 
         $link = AutoLogin::to('/other-link', 1);
 
@@ -40,10 +40,10 @@ class AutoLoginTest extends TestCase
     /**
      * @return void
      */
-    public function testHttpWithUserRedirect(): void
+    public function test_http_with_user_redirect(): void
     {
         Auth::shouldReceive('id')->once()->andreturn(1);
-        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User());
+        Auth::shouldReceive('loginUsingId')->once()->andreturn(new User);
 
         $link = AutoLogin::to('/other-link');
 

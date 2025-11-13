@@ -40,7 +40,7 @@ class AutoLogin
      *
      * @return void
      */
-    public static function routes(string $uri = '/autologin', string $view = null): void
+    public static function routes(string $uri = '/autologin', ?string $view = null): void
     {
         Route::get($uri, self::class)
             ->middleware('signed')
@@ -56,7 +56,7 @@ class AutoLogin
      *
      * @return string
      */
-    public static function link(string $path = '/', string|int $id = null): string
+    public static function link(string $path = '/', string|int|null $id = null): string
     {
         $expiresAt = Carbon::now()->addDay();
 
@@ -74,7 +74,7 @@ class AutoLogin
      *
      * @return string
      */
-    public static function to(string $path = '/', string|int $id = null)
+    public static function to(string $path = '/', string|int|null $id = null)
     {
         return self::link($path, $id);
     }
@@ -86,7 +86,7 @@ class AutoLogin
      *
      * @return string
      */
-    public static function route(string $name, $parameters = [], string|int $id = null): string
+    public static function route(string $name, $parameters = [], string|int|null $id = null): string
     {
         return self::link(route($name, $parameters), $id);
     }
